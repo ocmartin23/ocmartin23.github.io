@@ -12,15 +12,38 @@ body {
   margin: 0 auto;
   padding: 0px 0px;
   width: 768px;
-  height: 1600px; /* put back at 1024 once all the of elements are aligned */
+  height: 1024px; /* put back at 1024 once all the of elements are aligned */
 }
 
-#sidebar {
-  /* how do I align this the right way?? */
+#background {
+  background-image: url("scallop-background.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  position: relative;
+  left: 300px;
+  border: 1px solid red;
+  /* justify-content: center; */
+  /* I want to make the box the size and position it needs to be and then center the contents */
 }
 
 #title {
   position: absolute;
+}
+
+#letterform {
+  display: flex;
+  /* do that one flexbox tutorial and figure out what to use */
+  border: 1px solid red;
+
 }
 
   h1 {
@@ -30,7 +53,6 @@ body {
   margin-bottom: 0;
   padding: 0px 0px;
   line-height: 0.75;
-  border: 1px solid red;
 
 /* the issue with the spacing on the e is that the actual character is taller than it looks. what should I do? */
 
