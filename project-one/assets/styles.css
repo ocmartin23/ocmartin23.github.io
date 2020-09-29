@@ -1,7 +1,11 @@
+/* hex codes
+  peacock blue: #004b52
+  light gold: #ffe1a5
+  dark gold: #7f5c12 */
+
 body {
-  color: #004b52; /* peacock blue hex code */
+  color: #004b52;
   background-image: linear-gradient(#ffe1a5, #7f5c12);
-  /* light gold to dark gold */
   font-family: "Poiret One";
   font-size: 26px;
   font-weight: 400;
@@ -9,7 +13,7 @@ body {
 }
 
 #container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0px 0px;
   width: 768px;
   height: 1024px; /* put back at 1024 once all the of elements are aligned */

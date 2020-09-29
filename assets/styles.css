@@ -17,6 +17,7 @@ h1 {
 
 h2 {
   font-family: 'Montserrat';
+  font-size: 1.75em;
   color: white;
   /* border: 1px solid red; */
   margin-top: -100px;
@@ -26,6 +27,16 @@ h2 {
 p {
   font-family: 'Montserrat';
   color: white;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 #content {
