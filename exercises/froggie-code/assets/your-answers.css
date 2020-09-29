@@ -1,0 +1,56 @@
+/* This is the stylesheet where you will be putting your answers for Exercise 4: Positioning Objects */
+
+/* PROPERTIES you will be using in this exercise include:
+postion, top, left, right, order, display, justify-content, and z-index. */
+
+
+#green-froggie {
+  position: absolute;
+  left:389px;
+}
+
+#pro-one {
+
+}
+
+#red-froggie {
+  position:static;
+}
+
+#gold-froggie {
+  position: fixed;
+  left: 1235px;
+}
+/* I tried to use right, but when I put in left: 10px; it was still way off to the left, so I had to go from the left.
+Also, I don't know how the frog got under the bar instead of over it, but I don't know how to fix it. */
+
+#rel-lily-pad {
+  position: relative;
+  top: 379px;
+  left: 86px;
+}
+
+.flexbox-frogs-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-frogs-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#unhappy-green {
+  display: flex;
+  order: 3;
+}
+
+#happy-red {
+  display: flex;
+  order: 2;
+}
+
+#unhappy-purple {
+  display: flex;
+  order: 1;
+}
