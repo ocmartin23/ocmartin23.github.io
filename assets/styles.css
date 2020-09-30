@@ -1,9 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 20px;
   background-image: url(wildcat-sky.png);
   background-size: cover;
   margin: 0px;
-  /* How do I make it so that if someone scrolls, the image extends to their scrolling instead of revealing the blank background? */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
 }
 
 h1 {
@@ -24,7 +31,7 @@ h2 {
   margin-left: 25px;
 }
 
-p {
+p, a {
   font-family: 'Montserrat';
   color: white;
 }
@@ -32,11 +39,6 @@ p {
 a:link, a:visited {
   color: white;
   text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  text-decoration: underline;
 }
 
 #content {
@@ -48,12 +50,13 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
   background-color: rgba(20,24,35,0.85);
   /* mountain blue hex: #141823 */
-  width: 290px;
-  height: 616px;
   z-index: 3;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40vh;
+  height: 100vh;
 }
 
 .header {
@@ -67,8 +70,18 @@ a:hover {
 
 .link {
   margin-left: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 30px;
   background-color: #141823;
   border-radius: 10px;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: rgba(20,24,35,0.65);
+  text-decoration: none;
+
+}
+
+#photos img {
+  width: 75%;
 }
