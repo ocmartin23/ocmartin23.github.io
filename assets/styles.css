@@ -1,45 +1,23 @@
+  /* mountain blue hex: #141823 */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-size: 20px;
   background-image: url(wildcat-sky.png);
   background-size: cover;
-  margin: 0px;
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: bottom;
 
+  margin: 0px;
+  height: 100vh;
+
+  font-size: 20px;
+
 }
 
-h1 {
-  font-family: 'Meddon';
-  font-size: 5em;
-  color: white;
-  /* border: 1px solid red; */
-  margin-top: 50px;
-  margin-left: 10px
-}
-
-h2 {
-  font-family: 'Montserrat';
-  font-size: 1.75em;
-  color: white;
-  /* border: 1px solid red; */
-  margin-top: -100px;
-  margin-left: 25px;
-}
-
-p, a {
-  font-family: 'Montserrat';
-  color: white;
-}
-
-a:link, a:visited {
-  color: white;
-  text-decoration: none;
-}
+/* divs */
 
 #content {
   display: flex;
@@ -51,13 +29,19 @@ a:link, a:visited {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(20,24,35,0.85);
-  /* mountain blue hex: #141823 */
   z-index: 3;
   padding: 10px;
   box-sizing: border-box;
   width: 40vh;
   height: 100vh;
+
 }
+
+#photos img {
+  width: 75%;
+}
+
+/* sections */
 
 .header {
   z-index: 2;
@@ -65,7 +49,6 @@ a:link, a:visited {
 
 .links {
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .link {
@@ -82,6 +65,32 @@ a:link, a:visited {
 
 }
 
-#photos img {
-  width: 75%;
+/* typestyles */
+
+h1 {
+  font-family: 'Meddon';
+  font-size: 5em;
+  color: white;
+
+  margin-top: 50px;
+  margin-left: 10px
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-size: 1.75em;
+  color: white;
+
+  margin-top: -100px;
+  margin-left: 25px;
+}
+
+p, a {
+  font-family: 'Montserrat';
+  color: white;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
 }
