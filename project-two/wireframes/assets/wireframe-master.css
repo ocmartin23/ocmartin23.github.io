@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+
+#background {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100vw;
+  position: fixed;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-items: center;
+
+}
+
+#nav-bar {
+  z-index: inherit;
+  display: flex;
+  position: fixed;
+  height: 12vh;
+  width: 70vw;
+  margin-top: 32vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#text {
+  display: flex;
+  position: static;
+  align-items: center;
+  margin: 50vh auto 6vh auto;
+  width: 40vw;
+  height: 600px;
+  background-color: #CEC6BB;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  justify-content: space-between;
+  margin: 50vh auto 6vh auto;
+  width: 70vw;
+  height: 400px;
+}
+
+#left, #right {
+  width: 12vw;
+  height: 400px;
+  background-color: #CEC6BB;
+}
+
+#photo {
+  width: 41vw;
+  height: 400px;
+  background-color: #CEC6BB;
+}
+
+a {
+  text-decoration: none;
+  color: #CEC6BB;
+}
+
+a.nav {
+  width: 10vw;
+  padding: 1vw;
+  border: 2px solid #CEC6BB;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Prata';
+}
+
+a.nav:hover {
+  color: #272A13;
+  background-color: #CEC6BB;
+}
+
+/* page-specific commands */
+
+/* headers */
+
+#hero-image-home {
+  height: 32vh;
+  background-color: #354510;
+}
+
+#nav-background-home {
+  height: 12vh;
+  background-color: #272A13;
+}
+
+#hero-image-spiderwort {
+  height: 32vh;
+  background-color: #8C68DA;
+}
+
+#nav-background-spiderwort {
+  height: 12vh;
+  background-color: #1D0E38;
+}
+
+#hero-image-bluebells {
+  height: 32vh;
+  background-color: #BBD7FF;
+}
+
+#nav-background-bluebells {
+  height: 12vh;
+  background-color: #586DC6;
+}
+
+#hero-image-damesrocket {
+  height: 32vh;
+  background-color: #CBC0D6;
+}
+
+#nav-background-damesrocket {
+  height: 12vh;
+  background-color: #9C728C;
+}
+
+#hero-image-ladysslipper {
+  height: 32vh;
+  background-color: #FFD0E9;
+}
+
+#nav-background-ladysslipper {
+  height: 12vh;
+  background-color: #B6525A;
+}
