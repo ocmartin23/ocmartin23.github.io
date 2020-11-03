@@ -46,18 +46,18 @@ body {
   justify-content: space-between;
   margin: 50vh auto 6vh auto;
   width: 70vw;
-  height: 400px;
+  height: 30.75vw;
 }
 
 #left, #right {
   width: 12vw;
-  height: 400px;
+  height: 100%;
   background-color: #CEC6BB;
 }
 
 #photo {
   width: 41vw;
-  height: 400px;
+  height: 100%;
   background-color: #CEC6BB;
 }
 
