@@ -22,14 +22,6 @@ body {
   align-items: center;
 }
 
-#main {
-  display: flex;
-  flex-direction: column;
-  margin: 50vh auto 6vh auto;
-  width: 41vw;
-  z-index: 1;
-}
-
 #content {
   display: flex;
   flex-direction: column;
@@ -37,26 +29,93 @@ body {
   align-items: center;
 }
 
-#left, #right {
+#main-home {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  justify-content: space-between;
+  margin: 50vh auto 6vh auto;
+  width: 41vw;
+  z-index: 1;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  justify-content: space-between;
+  margin: 50vh auto 6vh auto;
+  width: 70vw;
+  z-index: 1;
+}
+
+#left {
   width: 12vw;
   height: 100%;
-  background-color: #CEC6BB;
+  /* background-color: #CEC6BB; */
 }
 
-#photo {
-  width: 41vw;
+#right {
+  width: 12vw;
   height: 100%;
-  background-color: #CEC6BB;
+  /* background-color: #CEC6BB; */
+}
+
+#photo-spiderwort {
+  width: 41vw;
+  height: 27.33vw;
+  background-image: url("spiderwort.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
 
 }
 
-/* page-specific commands */
+#photo-bluebells {
+  width: 41vw;
+  height: 27.33vw;
+  background-image: url("virginia-bluebell.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+#photo-damesrocket {
+  width: 41vw;
+  height: 27.33vw;
+  background-image: url("dames-rocket.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+#photo-ladysslipper {
+    width: 41vw;
+    height: 27.33vw;
+    background-image: url("ladys-slipper.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+/* nav bar */
 
 #hero-image-home {
   display: flex;
   position: static;
   height: 32vh;
-  background-image: url("mountain-range.jpg");
+  background-image: url("mountain-range.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +127,7 @@ body {
   display: flex;
   position: static;
   height: 32vh;
-  background-image: url("spiderwort-hero.jpg");
+  background-image: url("spiderwort-hero.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +139,7 @@ body {
   display: flex;
   position: static;
   height: 32vh;
-  background-image: url("virginia-bluebell-hero.jpg");
+  background-image: url("virginia-bluebell-hero.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,7 +163,7 @@ body {
   display: flex;
   position: static;
   height: 32vh;
-  background-image: url("ladys-slipper-hero.jpg");
+  background-image: url("ladys-slipper-hero.JPG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -138,33 +197,47 @@ body {
 }
 
 
-/* text commands */
-
-h1, h2, a.nav {
-  font-family: 'Prata';
-}
-
-p, p2, a {
-  font-family: 'Montserrat';
-}
+/* text */
 
 h1 {
+  font-family: 'Prata';
   color: #CEC6BB;
   font-size: 3.4vw;
   margin-block-end: 1vh;
   text-align: center;
-
 }
 
-p {
+p.home, p.sources, p.header, p.scientific, p.body {
+  font-family: 'Montserrat';
+}
+
+p.home {
   font-size: 1.3vw;
   line-height: 2vw;
 }
 
-p2 {
+p.sources {
   font-size: 0.9vw;
   line-height: 1.5vw;
   text-align: center;
+}
+
+p.header {
+  font-size: 2vw;
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
+p.scientific {
+  font-style: italic;
+  font-size: 1.3vw;
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
+p.body {
+  font-size: 1.1vw;
+  margin-block-start: 0.5em;
 }
 
 a {
@@ -172,7 +245,14 @@ a {
   color: black;
 }
 
-a.nav {
+em {
+  font-style: italic;
+}
+
+/* nav bar text */
+
+a.navh, a.navs, a.navb, a.navd, a.navl {
+  font-family: 'Prata';
   width: 10vw;
   padding: 1vw;
   color: #CEC6BB;
@@ -181,7 +261,27 @@ a.nav {
   text-align: center;
 }
 
-a.nav:hover {
+a.navh:hover {
   color: #272A13;
+  background-color: #CEC6BB;
+}
+
+a.navs:hover {
+  color: #1D0E38;
+  background-color: #CEC6BB;
+}
+
+a.navb:hover {
+  color: #586DC6;
+  background-color: #CEC6BB;
+}
+
+a.navd:hover {
+  color: #9C728C;
+  background-color: #CEC6BB;
+}
+
+a.navl:hover {
+  color: #B6525A;
   background-color: #CEC6BB;
 }

@@ -49,6 +49,7 @@ body {
 
 .links {
   display: flex;
+  margin-bottom: 2vh;
 }
 
 .link {
