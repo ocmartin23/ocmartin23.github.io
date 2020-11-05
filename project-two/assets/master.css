@@ -207,7 +207,7 @@ h1 {
   text-align: center;
 }
 
-p.home, p.sources, p.header, p.scientific, p.body {
+p.home, p.sources, p.header, p.scientific, p.subhead, p.body, p.credit {
   font-family: 'Montserrat';
 }
 
@@ -235,14 +235,33 @@ p.scientific {
   margin-block-end: 0;
 }
 
+p.subhead {
+  font-size: 1.3vw;
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
 p.body {
   font-size: 1.1vw;
   margin-block-start: 0.5em;
 }
 
+p.credit {
+  font-size: .7vw;
+  margin-block-start: 1em;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+a.link {
+  color: #598331;
+}
+
+a.link:hover {
+  font-style: italic;
 }
 
 em {
@@ -284,4 +303,37 @@ a.navd:hover {
 a.navl:hover {
   color: #B6525A;
   background-color: #CEC6BB;
+}
+
+/* buttons */
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 5.5vw;
+  height: 2.5vw;
+
+  border: 2px solid #598331;
+  border-radius: 10px;
+  background-color: white;
+
+  font-family: 'Montserrat';
+  font-size: 1.1vw;
+  color: #598331;
+}
+
+button:hover {
+  width: 5.5vw;
+  height: 2.5vw;
+
+  border: 2px solid #598331;
+  border-radius: 10px;
+  background-color: #598331;
+
+  font-family: 'Montserrat';
+  font-size: 1.1vw;
+  color: white;
 }
