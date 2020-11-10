@@ -1,0 +1,71 @@
+/* This is the stylesheet for Exercise 9 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Crimson Text';
+}
+
+header {
+  background-color: #cccccc;
+  color:#000000;
+  text-align:center;
+  padding: 3em;
+}
+
+footer {
+  background-color:#000000;
+  color:#ffffff;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+footer img{
+  width: 25%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/********** Media Queries *************/
+
+/* Tablet Styles */
+@media screen and (min-width:775px) {
+
+
+}
+
+
+/* Desktop Styles */
+@media screen and (min-width:1055px) {
+
+  section {
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .row img, .row p {
+    width: 45%;
+  }
+
+  p, .row img {
+    margin: 5em 0;
+  }
+
+}

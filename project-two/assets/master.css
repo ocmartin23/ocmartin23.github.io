@@ -73,6 +73,10 @@ body {
 
 }
 
+#photo-spiderwort.zoom {
+  background-image: url("spiderwort-zoom.jpg");
+}
+
 #photo-bluebells {
   width: 41vw;
   height: 27.33vw;
@@ -83,6 +87,10 @@ body {
   align-items: flex-end;
   justify-content: center;
 
+}
+
+#photo-bluebells.zoom {
+  background-image: url("virginia-bluebell-zoom.jpg");
 }
 
 #photo-damesrocket {
@@ -97,6 +105,10 @@ body {
 
 }
 
+#photo-damesrocket.zoom {
+  background-image: url("dames-rocket-zoom.jpg");
+}
+
 #photo-ladysslipper {
     width: 41vw;
     height: 27.33vw;
@@ -107,6 +119,10 @@ body {
     align-items: flex-end;
     justify-content: center;
 
+}
+
+#photo-ladysslipper.zoom {
+  background-image: url("ladys-slipper-zoom.jpg");
 }
 
 /* nav bar */
@@ -310,14 +326,15 @@ a.navl:hover {
 #buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 button {
   width: 5.5vw;
-  height: 2.5vw;
+  height: 54px;
 
   border: 2px solid #598331;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
 
   font-family: 'Montserrat';
@@ -326,11 +343,7 @@ button {
 }
 
 button:hover {
-  width: 5.5vw;
-  height: 2.5vw;
-
   border: 2px solid #598331;
-  border-radius: 10px;
   background-color: #598331;
 
   font-family: 'Montserrat';
