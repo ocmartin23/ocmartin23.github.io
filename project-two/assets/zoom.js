@@ -4,8 +4,16 @@ $(document).ready(function (){
         //ID or Class name of the modal you want to appear on click goes into this second area.
         $("#photo-spiderwort").toggleClass("zoom");
         });
+
     $('#bluebells').click(function() {
-        //ID or Class name of the modal you want to appear on click goes into this second area.
         $("#photo-bluebells").toggleClass("zoom");
         });
+
+    $('#damesrocket').click(function() {
+        $("#photo-damesrocket").toggleClass("zoom");
+        });
+
+    $('#ladysslipper').click(function() {
+        $("#photo-ladysslipper").toggleClass("zoom");
+      });
 });
