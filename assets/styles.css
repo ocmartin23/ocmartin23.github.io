@@ -53,11 +53,13 @@ body {
 }
 
 .link {
+  width: 210px;
   margin-left: 20px;
   padding: 30px;
   background-color: #141823;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
 }
 
 .link:hover {

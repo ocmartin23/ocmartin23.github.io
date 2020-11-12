@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 1.4vw;
+  font-size: 20px;
   font-family: 'Montserrat';
   font-weight: 300;
   color: #1d2027;
@@ -25,6 +25,12 @@ footer {
   background-color:#252b33;
   color:#cbd0d4;
   text-align: center;
+  padding: 1em;
+}
+
+section {
+  width: 80vw;
+  margin: 5vw auto 5vw auto;
 }
 
 img {
@@ -45,10 +51,8 @@ h4 {
 
 p {
   font-size: 1em;
-}
-
-p.credit {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 a {
@@ -73,7 +77,6 @@ a {
 /* Desktop Styles */
 @media screen and (min-width:1055px) {
 
-
   section {
     width: 80vw;
     margin: 0 auto;
@@ -87,6 +90,10 @@ a {
 
   .row img, .row p {
     width: 47%;
+  }
+
+  .row img {
+    align-self: flex-start;
   }
 
   p, .row img {
