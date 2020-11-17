@@ -1,0 +1,33 @@
+/* External Stylesheet for Exercise 10: Responsive Resume Design */
+
+/* REMINDER — CODE MOBILE FIRST! The code needed to display your design on a tablet or desktop should be handled using MEDIA QUERIES */
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ********** MEDIA QUERIES ********************* */
+
+/* Tablet Design */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+
+}
+
+
+/* Desktop Design */
+@media screen and (min-width:1025px) {
+
+
+}
