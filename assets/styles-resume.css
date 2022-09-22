@@ -1,0 +1,214 @@
+/* External Stylesheet for Exercise 10: Responsive Resume Design */
+
+/* REMINDER — CODE MOBILE FIRST! The code needed to display your design on a tablet or desktop should be handled using MEDIA QUERIES */
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+#body {
+  width: 80vw;
+  margin: 0 auto 50px auto;
+}
+
+#header {
+  width: 100vw;
+  background-color: #778520;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+#sidebar {
+  width: 0;
+  height: 0;
+}
+
+.bubble {
+  height: 150px;
+  width: 150px;
+  margin: 25px auto 25px auto;
+  border-radius: 75px;
+  background-color: #677413;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, p, a {
+  font-family: 'Montserrat';
+}
+
+h3, h4, p, a {
+  line-height: 1.5;
+  color: #677413;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #E9E092;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E9E092;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+em {
+  font-style: italic;
+}
+
+img.headshot {
+  width: 150px;
+  height: 150px;
+}
+
+img.columbine {
+
+}
+
+
+
+
+
+
+
+
+
+/* ********** MEDIA QUERIES ********************* */
+
+/* Tablet Design */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  #body {
+    margin: 0 5vw 0 5vw;
+    width: auto;
+  }
+
+  #photo {
+    height: 40vw;
+    width: 100vw;
+    background-image: url("columbine-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  #header {
+    display: flex;
+    margin: 50px 5vw 50px 5vw;
+    padding: 0;
+    width: auto;
+
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 50px;
+
+  }
+
+  .bubble {
+    margin: 0;
+  }
+
+  .content {
+    margin-left: 50px;
+    width: 75%;
+  }
+
+  h1 {
+    margin-left: 50px;
+    color: #677413;
+  }
+
+}
+
+
+/* Desktop Design */
+@media screen and (min-width:1025px) {
+
+  #body {
+    margin: 0;
+    width: auto;
+  }
+
+  #photo {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 40vh;
+    margin: 0;
+    background-image: url("columbine-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  #sidebar {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: calc(10vh + 150px);
+    margin-left: 40vh;
+    background-color: #778520;
+    z-index: -1;
+  }
+
+  #header {
+    display: flex;
+    margin: 0 5vw 50px 45vh;
+    padding: 50px 0 0 0;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 45vh;
+    margin-bottom: 50px;
+
+  }
+
+  .bubble {
+    margin: 0;
+  }
+
+  .content {
+    margin-left: 75px;
+    width: 63%;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin: 20px 0 0 75px;
+    color: #677413;
+  }
+
+}
