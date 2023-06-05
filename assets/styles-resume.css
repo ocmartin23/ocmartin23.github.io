@@ -1,5 +1,3 @@
-/* External Stylesheet for Exercise 10: Responsive Resume Design */
-
 /* REMINDER — CODE MOBILE FIRST! The code needed to display your design on a tablet or desktop should be handled using MEDIA QUERIES */
 
 * {
@@ -24,6 +22,10 @@
   height: 0;
 }
 
+#photo-credit {
+  display: none;
+}
+
 .bubble {
   height: 150px;
   width: 150px;
@@ -35,11 +37,11 @@
   align-items: center;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, h5, p, a {
   font-family: 'Montserrat';
 }
 
-h3, h4, p, a {
+h3, h4, h5, p, a {
   line-height: 1.5;
   color: #677413;
 }
@@ -65,6 +67,12 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 500;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 300;
+  display: none;
 }
 
 p {
@@ -123,6 +131,10 @@ img.columbine {
     background-color: rgba(0, 0, 0, 0);
   }
 
+  #photo-credit {
+    display: contents;
+  }
+
   .section {
     display: flex;
     flex-direction: row;
@@ -143,6 +155,10 @@ img.columbine {
   h1 {
     margin-left: 50px;
     color: #677413;
+  }
+
+  h5 {
+    display: contents;
   }
 
 }
@@ -209,6 +225,10 @@ img.columbine {
     font-size: 60px;
     margin: 20px 0 0 75px;
     color: #677413;
+  }
+
+  h5 {
+    display: contents;
   }
 
 }
