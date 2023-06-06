@@ -12,7 +12,7 @@
 
 #header {
   width: 100vw;
-  background-color: #778520;
+  background-color: #5E7A28;
   text-align: center;
   padding: 50px 0 50px 0;
 }
@@ -22,16 +22,12 @@
   height: 0;
 }
 
-#photo-credit {
-  display: none;
-}
-
 .bubble {
   height: 150px;
   width: 150px;
   margin: 25px auto 25px auto;
   border-radius: 75px;
-  background-color: #677413;
+  background-color: #5E7A28;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,14 +46,18 @@ h1 {
   margin-top: 30px;
   font-size: 30px;
   font-weight: 300;
-  color: #E9E092;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 600;
-  color: #E9E092;
   text-align: center;
+}
+
+h1, h2 {
+  /* top green, bottom purple */
+  color: #DCEA93;
+  /* color: #EFDEFF;*/
 }
 
 h3 {
@@ -72,7 +72,6 @@ h4 {
 h5 {
   font-size: 15px;
   font-weight: 300;
-  display: none;
 }
 
 p {
@@ -84,13 +83,10 @@ em {
   font-style: italic;
 }
 
-img.headshot {
+img.macro {
   width: 150px;
   height: 150px;
-}
-
-img.columbine {
-
+  border-radius: 75px;
 }
 
 
@@ -114,7 +110,7 @@ img.columbine {
   #photo {
     height: 40vw;
     width: 100vw;
-    background-image: url("columbine-tablet.jpg");
+    background-image: url("knapweed-tablet.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,10 +125,6 @@ img.columbine {
 
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
-  }
-
-  #photo-credit {
-    display: contents;
   }
 
   .section {
@@ -152,13 +144,13 @@ img.columbine {
     width: 75%;
   }
 
+  img.macro {
+    opacity: 0;
+  }
+
   h1 {
     margin-left: 50px;
     color: #677413;
-  }
-
-  h5 {
-    display: contents;
   }
 
 }
@@ -178,7 +170,7 @@ img.columbine {
     height: 100vh;
     width: 40vh;
     margin: 0;
-    background-image: url("columbine-desktop.jpg");
+    background-image: url("knapweed-desktop.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -191,7 +183,7 @@ img.columbine {
     height: 100vh;
     width: calc(10vh + 150px);
     margin-left: 40vh;
-    background-color: #778520;
+    background-color: #75912D;
     z-index: -1;
   }
 
@@ -221,14 +213,14 @@ img.columbine {
     width: 63%;
   }
 
+  img.macro {
+    opacity: 0;
+  }
+
   h1 {
     font-size: 60px;
     margin: 20px 0 0 75px;
     color: #677413;
-  }
-
-  h5 {
-    display: contents;
   }
 
 }
